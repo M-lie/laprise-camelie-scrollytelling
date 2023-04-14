@@ -1,0 +1,115 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --red: #98272D;
+    --yellow: #DDAF64;
+    --title: #ECEFA9;
+    --beige: #FAC49D;
+    --turquoise: #1E6672;
+    --green: #63B67F;
+    --color: #D45125;
+    --typo: 'Mansalva', cursive;
+}
+
+header { 
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/svg/ciel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 100px;
+    font-family: 'Mansalva', cursive;
+    text-align: center;
+    color: var(--title);
+    font-size: 4em;
+    letter-spacing: 0.5em;
+}
+
+header p {
+    margin-top: 700px;
+    font-family: 'Shrikhand', cursive;
+    color: var(--title);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+header svg {
+    position: fixed;
+    bottom: 100px;
+    left: 925px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#chapter1 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#chapter2 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url("../img/svg/ixy_promene_paysage1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#chapter3 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url("../img/svg/chemin_pierre.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#chapter4 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url("../img/svg/paysage_chateau.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#chapter5 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#chapter6 {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-image: url("../img/svg/paysage_paradis.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+}
