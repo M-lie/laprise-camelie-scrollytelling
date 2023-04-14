@@ -1,6 +1,6 @@
 # Projet scrollytelling : La quête d'Ixy
 
-## Projet scolaire dans le cadre du cours : Optimisation Web - [Projet Scrollytelling](https://www.example.com)
+## Projet scolaire dans le cadre du cours : Optimisation Web - [Projet Scrollytelling](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/)
 
 ## Conception :
 - Camélie Laprise
@@ -14,5 +14,5 @@
 - HTML
 - CSS
 - Javascript
-- [Librairie d'animation GSAP](https://www.example.com)
-- [PLugiciel ScrollTrigger](https://www.example.com)
+- [Librairie d'animation GSAP](https://greensock.com/)
+- [PLugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)
