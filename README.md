@@ -15,4 +15,4 @@
 - CSS
 - Javascript
 - [Librairie d'animation GSAP](https://greensock.com/)
-- [PLugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)
+- [Plugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)
