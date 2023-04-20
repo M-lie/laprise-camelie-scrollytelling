@@ -125,12 +125,58 @@ section {
     background-size: cover;
 }
 
+.ixy-foret {
+    position: absolute;
+    background-image: url("../img/img_personnages/spritesheet_fantome_foret.png");
+    width: 503.5px;
+    height: 502px;
+    animation-name: fantome-foret;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(39);
+    animation-play-state: running;
+}
+
+@keyframes fantome-foret {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 19578px 0;
+    }
+}
+
+.ixy-ciel {
+    position: absolute;
+    background-image: url("../img/img_personnages/spritesheet_fantome_ciel.png");
+    width: 411.45px;
+    height: 422px;
+    animation-name: fantome-ciel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(39);
+    animation-play-state: running;
+}
+
+@keyframes fantome-ciel {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -16458px 0;
+    }
+}
+
 .bg {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .bg.chapter2.no1 {
+    position: absolute;
     height: 96vh;
     padding: 15px;
 }
@@ -173,6 +219,33 @@ section {
 
 .visual.chapter3.no1 {
     position: absolute;
+    width: 70vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.visual.chapter3.no2 {
+    position: absolute;
+    width: 70vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.visual.chapter3.no3 {
+    position: absolute;
+    width: 100vw;
+    aspect-ratio: 1/1;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.visual.chapter3.no4 {
+    position: absolute;
     width: 50vw;
     aspect-ratio: 1/1;
     top: 50%;
@@ -188,3 +261,6 @@ section {
     right: 5vw;
     transform: translateY(-50%);
 }
+
+
+
