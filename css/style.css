@@ -2,6 +2,8 @@ html,body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 :root {
@@ -20,12 +22,14 @@ header {
     height: 100vh;
     background-image: url("../img/svg/ciel.svg");
     background-repeat: no-repeat;
+    background-position: 50% 100%;
     background-size: cover;
+    position: relative;
 }
 
 header h1 {
     margin: 0;
-    padding-top: 100px;
+    padding-top: 5vh;
     font-family: 'Mansalva', cursive;
     text-align: center;
     color: var(--title);
@@ -34,7 +38,10 @@ header h1 {
 }
 
 header p {
-    margin-top: 700px;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
     font-family: 'Shrikhand', cursive;
     color: var(--title);
     font-size: 11px;
@@ -42,26 +49,26 @@ header p {
     text-align: center;
 }
 
-header svg {
-    position: fixed;
-    bottom: 100px;
-    left: 925px;
+.bi-chevron-compact-down {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 section {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 #chapter1 {
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url();
+    background-image: url("../img/svg/homme_qui_tombe.svg");
     background-repeat: no-repeat;
-    background-position: 0 -150px;
-    background-size: cover;
+    background-position: 70% 50%;
+    background-size: contain;
 }
 
 #chapter2 {
@@ -70,7 +77,7 @@ section {
     display: block;
     background-image: url("../img/svg/ixy_promene_paysage1.svg");
     background-repeat: no-repeat;
-    background-position: 0 -150px;
+    background-position: 50% 100%;
     background-size: cover;
 }
 
@@ -80,7 +87,7 @@ section {
     display: block;
     background-image: url("../img/svg/chemin_pierre.svg");
     background-repeat: no-repeat;
-    background-position: 0 -150px;
+    background-position: 50% 100%;
     background-size: cover;
 }
 
@@ -90,7 +97,7 @@ section {
     display: block;
     background-image: url("../img/svg/paysage_chateau.svg");
     background-repeat: no-repeat;
-    background-position: 0 -150px;
+    background-position: 50% 100%;
     background-size: cover;
 }
 
@@ -99,9 +106,6 @@ section {
     height: 100vh;
     display: block;
     background-color: black;
-    background-repeat: no-repeat;
-    background-position: 0 -150px;
-    background-size: cover;
 }
 
 #chapter6 {
@@ -110,6 +114,6 @@ section {
     display: block;
     background-image: url("../img/svg/paysage_paradis.svg");
     background-repeat: no-repeat;
-    background-position: 0 -150px;
+    background-position: 50% 100%;
     background-size: cover;
 }
