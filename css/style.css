@@ -18,13 +18,13 @@ html,body {
 }
 
 header { 
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/svg/ciel.svg");
+    background-image: url("../img/img_arriere_plan/ciel.svg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
-    position: relative;
 }
 
 header h1 {
@@ -62,46 +62,52 @@ section {
 }
 
 #chapter1 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/svg/homme_qui_tombe.svg");
+    padding: 15px;
+    background-image: url("../img/img_personnages/homme_qui_tombe.svg");
     background-repeat: no-repeat;
     background-position: 70% 50%;
     background-size: contain;
 }
 
 #chapter2 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/svg/ixy_promene_paysage1.svg");
+    background-image: url("../img/img_arriere_plan/ixy_promene_paysage1.svg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
 
 #chapter3 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/svg/chemin_pierre.svg");
+    background-image: url("../img/img_arriere_plan/chemin_pierre.svg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
 
 #chapter4 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/svg/paysage_chateau.svg");
+    background-image: url("../img/img_arriere_plan/paysage_chateau.svg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
 
 #chapter5 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
@@ -109,11 +115,76 @@ section {
 }
 
 #chapter6 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/svg/paysage_paradis.svg");
+    background-image: url("../img/img_arriere_plan/paysage_paradis.svg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg.chapter2.no1 {
+    height: 96vh;
+    padding: 15px;
+}
+
+.character {
+    position: absolute;
+    width: 35vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visual.chapter2.no1 {
+    position: absolute;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 20vw;
+    transform: translateY(-50%);
+}
+
+.visual.chapter2.no2 {
+    position: absolute;
+    width: 10vw;
+    aspect-ratio: 1/1;
+    top: 33vh;
+    right: 20vw;
+    transform: rotate(-45deg);
+}
+
+.visual.chapter2.no3 {
+    position: absolute;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visual.chapter3.no1 {
+    position: absolute;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visual.chapter5.no1 {
+    position: absolute;
+    width: 45vw;
+    aspect-ratio: 1/1;
+    top: 50%;
+    right: 5vw;
+    transform: translateY(-50%);
 }
