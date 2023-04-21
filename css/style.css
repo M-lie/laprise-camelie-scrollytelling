@@ -1,9 +1,7 @@
-html,body {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 100%;
-    width: 100%;
 }
 
 :root {
@@ -25,6 +23,7 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 header h1 {
@@ -54,6 +53,33 @@ header p {
     bottom: 20vh;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 50px;
+}
+
+.container p {
+    font-family: 'Mansalva', cursive;
+    font-size: 3.3rem; 
+    color: var(--turquoise);
+    z-index: 5;
+}
+
+#chapter2 .container p {
+    color: var(--green);
+}
+
+#chapter4 .container {
+    top: 50%;
+    left: 10%;
+}
+
+#chapter4 .container p {
+    color: var(--green);
 }
 
 section {
@@ -207,6 +233,13 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.character.chapter2.no1 {
+    position: absolute;
+    left: 70%;
+    width: 80vw;
+    height: 80vh;
 }
 
 .visual.chapter2.no1 {
