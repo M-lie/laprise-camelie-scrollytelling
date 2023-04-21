@@ -51,7 +51,7 @@ header p {
 
 .bi-chevron-compact-down {
     position: absolute;
-    bottom: 10vh;
+    bottom: 20vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -66,7 +66,6 @@ section {
     width: 100vw;
     height: 100vh;
     display: block;
-    padding: 15px;
     background-image: url("../img/img_personnages/homme_qui_tombe.svg");
     background-repeat: no-repeat;
     background-position: 70% 50%;
@@ -126,7 +125,7 @@ section {
 }
 
 .ixy-foret {
-    position: absolute;
+    position: absolute;
     background-image: url("../img/img_personnages/spritesheet_fantome_foret.png");
     width: 503.5px;
     height: 502px;
@@ -134,7 +133,7 @@ section {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(39);
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 @keyframes fantome-foret {
@@ -148,7 +147,7 @@ section {
 }
 
 .ixy-ciel {
-    position: absolute;
+    position: absolute;
     background-image: url("../img/img_personnages/spritesheet_fantome_ciel.png");
     width: 411.45px;
     height: 422px;
@@ -156,7 +155,7 @@ section {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(39);
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 @keyframes fantome-ciel {
@@ -169,22 +168,42 @@ section {
     }
 }
 
-.bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.is-scrolling .ixy-foret {
+    animation-play-state: running;
 }
 
-.bg.chapter2.no1 {
+.is-scrolling .ixy-ciel {
+    animation-play-state: running;
+}
+
+.bg {
     position: absolute;
-    height: 96vh;
-    padding: 15px;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-position: 50% 100%;
+}
+
+.bg.chapter4.no1 {
+    object-position: 55% 100%;
+}
+
+.bg.chapter6.no2 {
+    top: 0;
+}
+
+.bgt {
+    position: absolute;
+    object-fit: contain;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
 }
 
 .character {
     position: absolute;
     width: 35vw;
-    aspect-ratio: 1/1;
+    height: 35vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -193,7 +212,7 @@ section {
 .visual.chapter2.no1 {
     position: absolute;
     width: 50vw;
-    aspect-ratio: 1/1;
+    height: 50vh;
     top: 50%;
     left: 20vw;
     transform: translateY(-50%);
@@ -202,7 +221,7 @@ section {
 .visual.chapter2.no2 {
     position: absolute;
     width: 10vw;
-    aspect-ratio: 1/1;
+    height: 10vh;
     top: 33vh;
     right: 20vw;
     transform: rotate(-45deg);
@@ -211,7 +230,7 @@ section {
 .visual.chapter2.no3 {
     position: absolute;
     width: 50vw;
-    aspect-ratio: 1/1;
+    height: 50vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -219,29 +238,26 @@ section {
 
 .visual.chapter3.no1 {
     position: absolute;
-    width: 70vw;
-    aspect-ratio: 1/1;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 100%;
 }
 
 .visual.chapter3.no2 {
     position: absolute;
-    width: 70vw;
-    aspect-ratio: 1/1;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 100%;
 }
 
 .visual.chapter3.no3 {
     position: absolute;
     width: 100vw;
-    aspect-ratio: 1/1;
-    top: 75%;
-    right: 0;
-    transform: translateY(-50%);
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 100%;
 }
 
 .visual.chapter3.no4 {
@@ -256,11 +272,9 @@ section {
 .visual.chapter5.no1 {
     position: absolute;
     width: 45vw;
-    aspect-ratio: 1/1;
+    height: 45vh;
     top: 50%;
     right: 5vw;
     transform: translateY(-50%);
 }
-
-
 
