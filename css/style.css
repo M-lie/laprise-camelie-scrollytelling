@@ -59,12 +59,20 @@ header p {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    margin: 50px;
+    margin: 1vw;
+}
+
+.container h2 {
+    font-family: 'Mansalva', cursive;
+    font-size: 8vw; 
+    color: var(--turquoise);
+    z-index: 5;
+    text-align: center;
 }
 
 .container p {
     font-family: 'Mansalva', cursive;
-    font-size: 3.3rem; 
+    font-size: 3vw; 
     color: var(--turquoise);
     z-index: 5;
 }
