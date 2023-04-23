@@ -11,7 +11,7 @@ body {
     --beige: #FAC49D;
     --turquoise: #1E6672;
     --green: #63B67F;
-    --color: #D45125;
+    --orange: #D45125;
     --typo: 'Mansalva', cursive;
 }
 
@@ -59,35 +59,28 @@ header p {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    margin: 1vw;
+    padding: 3vw;
+    margin: 0;
 }
 
 .container h2 {
     font-family: 'Mansalva', cursive;
     font-size: 8vw; 
-    color: var(--turquoise);
+    color: var(--green);
     z-index: 5;
     text-align: center;
+    margin-top: 30vh;
 }
 
 .container p {
     font-family: 'Mansalva', cursive;
     font-size: 3vw; 
-    color: var(--turquoise);
+    color: var(--beige);
     z-index: 5;
 }
 
-#chapter2 .container p {
-    color: var(--green);
-}
-
-#chapter4 .container {
-    top: 50%;
-    left: 10%;
-}
-
-#chapter4 .container p {
-    color: var(--green);
+#chapter1 p {
+    color: var(--turquoise);
 }
 
 section {
@@ -122,10 +115,7 @@ section {
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/img_arriere_plan/chemin_pierre.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: cover;
+    background-color: white;
 }
 
 #chapter4 {
@@ -236,8 +226,8 @@ section {
 
 .character {
     position: absolute;
-    width: 35vw;
-    height: 35vh;
+    width: 80vw;
+    height: 80vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -246,8 +236,11 @@ section {
 .character.chapter2.no1 {
     position: absolute;
     left: 70%;
-    width: 80vw;
-    height: 80vh;
+}
+
+.character.chapter5.no1 {
+    position: absolute;
+    left: 25%;
 }
 
 .visual.chapter2.no1 {
@@ -312,10 +305,10 @@ section {
 
 .visual.chapter5.no1 {
     position: absolute;
-    width: 45vw;
-    height: 45vh;
+    width: 100vw;
+    height: 100vh;
     top: 50%;
-    right: 5vw;
+    right: -13vw;
     transform: translateY(-50%);
 }
 

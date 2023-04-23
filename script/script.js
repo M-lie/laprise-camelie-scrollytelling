@@ -16,3 +16,7 @@ const animation = gsap.to('.bi-chevron-compact-down', {
   yoyo: true, 
   ease: 'power1.inOut'
 });
+
+let anim =  gsap
+  .timeline()
+  
