@@ -93,10 +93,7 @@ section {
     width: 100vw;
     height: 100vh;
     display: block;
-    background-image: url("../img/img_personnages/homme_qui_tombe.svg");
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
-    background-size: contain;
+    background-color: white;
 }
 
 #chapter2 {
@@ -225,7 +222,6 @@ section {
 }
 
 .character {
-    position: absolute;
     width: 80vw;
     height: 80vh;
     top: 50%;
@@ -233,14 +229,32 @@ section {
     transform: translate(-50%, -50%);
 }
 
+.character.chapter1.no1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .character.chapter2.no1 {
     position: absolute;
     left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .character.chapter5.no1 {
     position: absolute;
     left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.character.chapter6.no1 {
+    position: absolute;
+    top: -22vh;
+    width: 35vw;
+    height: 35vh;
 }
 
 .visual.chapter2.no1 {
@@ -263,8 +277,8 @@ section {
 
 .visual.chapter2.no3 {
     position: absolute;
-    width: 50vw;
-    height: 50vh;
+    width: 10vw;
+    height: 10vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -296,8 +310,8 @@ section {
 
 .visual.chapter3.no4 {
     position: absolute;
-    width: 50vw;
-    aspect-ratio: 1/1;
+    width: 40vw;
+    height: 40vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
