@@ -241,7 +241,7 @@ section {
 
 .character.chapter1.no1 {
     position: absolute;
-    top: 30%;
+    top: -70%;
     left: 50%;
     transform: translateX(-50%);
     border: solid 1px blue;
@@ -263,18 +263,28 @@ section {
 
 .character.chapter6.no1 {
     position: absolute;
-    top: -22vh;
+    top: -30vh;
     width: 35vw;
     height: 35vh;
 }
 
-.visual.chapter2.no1 {
+#vent {
     position: absolute;
-    width: 50vw;
-    height: 50vh;
-    top: 50%;
-    left: 20vw;
-    transform: translateY(-50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    right: 5vw;
+    object-position: 50% 60%;
+}
+
+.visual.chapter2.no1 {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    right: 5vw;
+    object-position: 50% 60%;
 }
 
 .visual.chapter2.no2 {
@@ -296,20 +306,23 @@ section {
     border: solid 1px blue;
 }
 
-.visual.chapter3.no1 {
+/*.visual.chapter3.no1 {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
+    right: -4.5vw;
     object-position: 50% 100%;
     border: solid 1px blue;
-}
+}*/
 
 .visual.chapter3.no2 {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    width: 89vw;
+    height: 89vh;
+    top: 5.7vh;
+    right: -0.5vw;
+    object-fit: contain;
     object-position: 50% 100%;
 }
 
@@ -317,9 +330,9 @@ section {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    right: 5vw;
-    object-position: 50% 60%;
+    right: -0.8vw;
+    object-fit: contain;
+    object-position: 50% 100%;
 }
 
 .visual.chapter3.no4 {
