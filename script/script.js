@@ -53,23 +53,29 @@ gsap.from(".vent", {
 
 /* ---- Effet parallaxe ---- */
 
-gsap.to("#section-parallax", {
-  backgroundPosition: "50% 100%",
-  ease: "none",
+gsap.to("#parallax-bg-1", {
   scrollTrigger: {
-      trigger: "#section-parallax",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      markers: true
-  }
+    scrub: true,
+   // markers: true,
+  },
+  y: "-300px",
+  ease: "none"
+});
+
+gsap.to("#parallax-bg-2", {
+  scrollTrigger: {
+    scrub: true,
+   // markers: true,
+  },
+  y: "600px",
+  ease: "none"
 });
 
 /* ---- Animation "restart complete reverse reset" ---- */
 
 gsap.to(".character.chapter1.no1", {
   scrollTrigger: {
-    markers: true,
+   // markers: true,
     start: "top 75%",
     end: "bottom 25%",
     toggleActions: "restart complete reverse reset",
@@ -84,7 +90,7 @@ gsap.to(".character.chapter1.no1", {
 
 gsap.to(".character.chapter6.no1", {
   scrollTrigger: {
-    markers: true,
+   // markers: true,
     start: "top 75%",
     end: "bottom 25%",
     trigger: "#chapter6",
@@ -95,25 +101,29 @@ gsap.to(".character.chapter6.no1", {
   ease: "sine.in",
 });
 
+/* ---- Animation chapitre 1 ---- */
 
 gsap.timeline({
     scrollTrigger: {
       trigger: "#chapter1"
     }
   })
-
-  /* ---- Animation chapitre 1 ---- */
+  
   .from("#chapter1 h2", {opacity: 0, duration: 4})
+
+  /* ---- Animation chapitre 2 ---- */
 
 gsap.timeline({
   scrollTrigger: {
-    trigger: "#chapter2"
+    trigger: "#chapter2",
+    markers: true
   }
 })
     
-  /* ---- Animation chapitre 2 ---- */
   .from("#chapter2 h2", {opacity: 0, duration: 4})
   .to(".visual.chapter2.no3", {scale: 5, duration: 2});
+
+   /* ---- Animation chapitre 3 ---- */
 
 gsap.timeline({
   scrollTrigger: {
@@ -121,10 +131,11 @@ gsap.timeline({
   }
 })
 
-  /* ---- Animation chapitre 3 ---- */
   .from("#chapter3 h2", {opacity: 0, duration: 4})
   .from(".visual.chapter3.no1", {x: "100%", duration: 3, ease: "expo.Out"})
   .to(".visual.chapter3.no4", {scale: 2, duration: 2});
+
+  /* ---- Animation chapitre 4 ---- */
 
 gsap.timeline({
   scrollTrigger: {
@@ -132,8 +143,9 @@ gsap.timeline({
   }
 })
 
-  /* ---- Animation chapitre 4 ---- */
   .from("#chapter4 h2", {opacity: 0, duration: 4});
+
+  /* ---- Animation chapitre 5 ---- */
 
 gsap.timeline({
   scrollTrigger: {
@@ -141,10 +153,10 @@ gsap.timeline({
   }
 })
 
-  /* ---- Animation chapitre 5 ---- */
   .from("#chapter5 h2", {opacity: 0, duration: 4})
   .from(".visual.chapter5.no1", {x: "100%", duration: 2, ease: "power3.inOut"});
 
+  /* ---- Animation chapitre 6 ---- */
 
 gsap.timeline({
   scrollTrigger: {
@@ -152,7 +164,6 @@ gsap.timeline({
   }
 })
 
-  /* ---- Animation chapitre 6 ---- */
   .from("#chapter6 h2", {opacity: 0, duration: 4})
   .from(".character.chapter6.no1", {y: "500%", duration: 5, repeat: -1, ease: "sine.in"});
 
