@@ -21,26 +21,6 @@ const animation = gsap.to('.bi-chevron-compact-down', {
   ease: 'power1.inOut'
 });
 
-/* ---- Effet parallaxe ---- */
-
-gsap.to("#parallax-bg-1", {
-  scrollTrigger: {
-    scrub: true,
-   // markers: true,
-  },
-  y: "-300px",
-  ease: "none"
-});
-
-gsap.to("#parallax-bg-2", {
-  scrollTrigger: {
-    scrub: true,
-   // markers: true,
-  },
-  y: "600px",
-  ease: "none"
-});
-
 /* ---- Animation chapitre 1 ---- */
 
 gsap.timeline({
@@ -88,13 +68,23 @@ gsap.timeline({
 
 gsap.timeline({
   scrollTrigger: {
+    pin: true,
+    scrub: true,
+    toggleActions: "restart complete reverse reset",
     trigger: "#chapter3"
   }
 })
 
-  .from("#chapter3 h2", {opacity: 0, duration: 4})
-  .from(".visual.chapter3.no1", {x: "100%", duration: 3, ease: "expo.Out"})
-  .to(".visual.chapter3.no4", {scale: 2, duration: 2});
+  .to("#chapter3 h2", {opacity: 0, duration: 2})
+  .to("#parallax-bg-1", {y: "-300px", ease: "none"}, "-=0.5")
+  .to("#parallax-bg-2", {y: "600px", ease: "none"}, "<")
+  .from(".bg.chapter3.no1", {y: "100%", duration: 2, ease: "power2.inOut"}, "+=1")
+  .from(".p-chapter3-1", {y: "500%", duration: 2, ease: "power2.inOut"}, "<")
+
+  .from(".bg.chapter3.no2", {x: "-100%", duration: 2, ease: "power2.inOut"}, "+=3")
+  .from(".p-chapter3-2", {x: "-125%", duration: 2, ease: "power2.inOut"}, "<")
+  .to(".bg.chapter3.no1", {x: "100%", duration: 2, ease: "power2.inOut"}, "<")
+  .to(".p-chapter3-1", {x: "100%", duration: 2, ease: "power2.inOut"}, "<");
 
 /* ---- Animation chapitre 4 ---- */
 

@@ -323,17 +323,7 @@ section {
     border: solid 1px blue;
 }
 
-/*.visual.chapter3.no1 {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    right: -4.5vw;
-    object-position: 50% 100%;
-    border: solid 1px blue;
-}*/
-
-.visual.chapter3.no2 {
+.visual.chapter3.no1 {
     position: absolute;
     width: 89vw;
     height: 89vh;
@@ -343,7 +333,7 @@ section {
     object-position: 50% 100%;
 }
 
-.visual.chapter3.no3 {
+.visual.chapter3.no2 {
     position: absolute;
     width: 100vw;
     height: 100vh;
