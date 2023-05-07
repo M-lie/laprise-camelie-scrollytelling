@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 let body = document.querySelector('body');
 let timerScroll;
@@ -20,6 +21,18 @@ const animation = gsap.to('.bi-chevron-compact-down', {
   yoyo: true, 
   ease: 'power1.inOut'
 });
+
+/* ---- Morphing ---- */
+
+gsap.timeline({
+  scrollTrigger: {
+    pin: true,
+    scrub: 0.5,
+    trigger: "header"
+  },
+})
+
+.to("#nuage", {morphSVG: "#fantome"});
 
 /* ---- Animation chapitre 1 ---- */
 

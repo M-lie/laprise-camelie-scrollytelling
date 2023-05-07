@@ -12,6 +12,7 @@ body {
     --turquoise: #1E6672;
     --green: #63B67F;
     --orange: #D45125;
+    --mauve: #C5C2FF;
     --typo: 'Mansalva', cursive;
 }
 
@@ -32,7 +33,7 @@ header h1 {
     font-family: 'Mansalva', cursive;
     text-align: center;
     color: var(--title);
-    font-size: 4em;
+    font-size: 6em;
     letter-spacing: 0.5em;
 }
 
@@ -46,6 +47,18 @@ header p {
     font-size: 11px;
     letter-spacing: 0.1em;
     text-align: center;
+}
+
+#morph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#fantome {
+    visibility:hidden;
 }
 
 .bi-chevron-compact-down {
@@ -75,7 +88,7 @@ header p {
 .container p {
     font-family: 'Mansalva', cursive;
     font-size: 3vw; 
-    color: var(--beige);
+    color: var(--mauve);
     z-index: 5;
 }
 
@@ -261,7 +274,6 @@ section {
     bottom: 150%;
     left: 50%;
     transform: translateX(-50%);
-    border: solid 1px blue;
 }
 
 .character.chapter2.no1 {
@@ -320,7 +332,6 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid 1px blue;
 }
 
 .visual.chapter3.no1 {
@@ -349,7 +360,6 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid 1px blue;
 }
 
 .visual.chapter5.no1 {
@@ -359,9 +369,4 @@ section {
     top: 50%;
     right: -13vw;
     transform: translateY(-50%);
-    border: solid 1px blue;
-}
-
-.character.chapter6.no1 {
-    border: solid 1px blue;
 }
