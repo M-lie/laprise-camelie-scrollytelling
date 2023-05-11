@@ -13,7 +13,7 @@ Je vais diminuer mon nombre d'images en retirant les images inutiles à mon proj
 À la suite de cette modification, la performance du site sur le bureau n'a malheureusement pas changé. 
 
 ## Problème #2
-### Absence du lang
+### Absence du *lang*
 Le fichier HTML du projet ne semble pas reconnaître le *lang* situé dans ma balise d'ouverture *html*. 
 
 ### Action concrète pour résoudre le problème
@@ -23,7 +23,7 @@ Je vais retranscrire la balise d'ouverture *html* suivi d'un *lang="fr"* afin de
 À la suite de cette retranscription, l'accessibilité du site sur le bureau a augmenté passant de 88 à 94. 
 
 ## Problème #3
-### Absence du *meta-desription*
+### Absence du *meta-description*
 Le fichier HTML du projet ne présente pas une *meta-description* dans son *head*
 
 ### Action concrète pour résoudre le problème
