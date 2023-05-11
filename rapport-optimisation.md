@@ -7,7 +7,7 @@
 Beaucoup d'images sont présentes dans mon projet.
 
 ### Action concrète pour résoudre le problème
-Je vais diminuer mon nombre d'images en retirant les imges inutiles à mon projet, c'est-à-dire celles qui ne sont pas présentées dans mon histoire.
+Je vais diminuer mon nombre d'images en retirant les images inutiles à mon projet, c'est-à-dire celles qui ne sont pas présentées dans mon histoire.
 
 ### Résultat
 À la suite de cette modification, la performance du site sur le bureau n'a malheureusement pas changé. 
