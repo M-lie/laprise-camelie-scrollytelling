@@ -99,7 +99,6 @@ header p {
 section {
     margin: 0;
     padding: 0;
-    border: solid 1px red;
 }
 
 #chapter1 {
@@ -369,4 +368,25 @@ section {
     top: 50%;
     right: -13vw;
     transform: translateY(-50%);
+}
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
 }

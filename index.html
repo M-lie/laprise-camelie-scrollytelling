@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site racontant une courte histoire de 6 chapitres en utilisant le scrollytelling">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="img/img_personnages/ixy.svg">
     <title>La quête d'Ixy</title>
 </head>
@@ -26,6 +27,17 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="#ECEFA9" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
         </svg>
+
+        <ul class="technique-gsap"> 
+            <li>morphSVG</li> 
+            <li>scrollTrigger 
+                <ul> 
+                    <li>trigger=header</li> 
+                    <li>pin=true</li> 
+                    <li>scrub=0.5</li>
+                </ul> 
+            </li> 
+        </ul> 
     </header>
 
     <main>
@@ -38,6 +50,19 @@
                 <p class="p-chapter1 no1"  style = "margin-top: -75vh;">J'avais décidé de sortir durant l'après-midi, <br> mais cette sortie en plein air <br> m'en a coûté la vie. <br> La chûte m'a paru interminable.</p>
                 <p class="p-chapter1 no2" style = "text-align: right; margin-right: 7vw; margin-top: -10vh;">Puis, je suis sorti de mon corps <br> sous la forme d'un fantôme et <br> j'ai regardé l'autre partie de moi <br> tombé et s'éteindre <br> tranquillement.</p>
             </div>
+
+            <ul class="technique-gsap"> 
+                <li>timeline de 4 étapes</li> 
+                <li>anim: y et opacity</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter1</li> 
+                        <li>pin=true</li> 
+                        <li>scrub=true</li>
+                        <li>toggleActions=restart complete reverse reset</li>
+                    </ul> 
+                </li> 
+            </ul> 
         </section>
 
         <section id="chapter2" class="chapter">
@@ -60,6 +85,21 @@
                 <p class="p-chapter2-2 no4" style = "text-align: right; margin-right: 7vw">Il semblait y avoir quelque chose <br> d'étrange sur la feuille, <br> ainsi je me suis rapproché.</p>
                 <p class="p-chapter2-2 no5">Puis, j'y ai lu les mots suivants : <br> RENDS-TOI OÙ <br> LES PIERRES REPOSENT.</p>
             </div>
+
+            <ul class="technique-gsap"> 
+                <li>timeline de 13 étapes</li> 
+                <li>anim: x, y, opacity, drawSVG, motionPath</li> 
+                <li>drawSVG</li> 
+                <li>motionPath</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter2</li> 
+                        <li>pin=true</li> 
+                        <li>toggleActions=restart complete reverse reset</li>
+                    </ul> 
+                </li> 
+                <li>sprite sheet s'anime lorsque body contient la classe .is-scrolling</li> 
+            </ul> 
         </section>
 
         <section id="chapter3" class="chapter">
@@ -83,6 +123,20 @@
                 <p class="p-chapter3-2 no4">Celui-ci disait : <br> LE CHÂTEAU RENFERME <br> LE BUT DE TA QUÊTE.</p>
 
             </div>
+
+            <ul class="technique-gsap"> 
+                <li>timeline de 9 étapes</li> 
+                <li>anim: x, y et opacity</li> 
+                <li>effet parallax avec arrière-plan</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter3</li> 
+                        <li>pin=true</li> 
+                        <li>scrub=true</li>
+                        <li>toggleActions=restart complete reverse reset</li> 
+                    </ul> 
+                </li> 
+            </ul> 
         </section>
 
         <section id="chapter4" class="chapter">        
@@ -90,6 +144,19 @@
                 <h2>Chapitre 4</h2>
                 <p class="p-chapter4 no1">J'avais finalement trouvé le château <br> vers lequel je me suis rapidement dirigé.</p>
             </div>
+
+            <ul class="technique-gsap"> 
+                <li>timeline de 2 étapes</li> 
+                <li>anim: x et opacity</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter4</li> 
+                        <li>pin=true</li> 
+                        <li>scrub=true</li>
+                        <li>toggleActions=restart complete reverse reset</li> 
+                    </ul> 
+                </li> 
+            </ul> 
         </section>
 
         <section id="chapter5" class="chapter">
@@ -104,6 +171,19 @@
                 <p class="p-chapter5-3 no3" style = "text-align: right; margin-right: 7vw; margin-top: -78vh">Je me suis tranquillement rapproché <br> pour voir ce qu'il contenait.</p>
                 <p class="p-chapter5-3 no4" style = "text-align: right; margin-right: 7vw; margin-top: -5vh">Or, la brillance <br> qu'il projetait m'aveuglait.</p>
             </div>
+
+            <ul class="technique-gsap"> 
+                <li>timeline de 10 étapes</li> 
+                <li>anim: x, y et opacity</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter5</li> 
+                        <li>pin=true</li> 
+                        <li>scrub=true</li>
+                        <li>toggleActions=restart complete reverse reset</li> 
+                    </ul> 
+                </li> 
+            </ul> 
         </section>
 
         <section id="chapter6" class="chapter">
@@ -120,15 +200,27 @@
                 <p class="p-chapter6-2 no3" style="color: var(--turquoise); text-align: right; margin-right: 7vw; margin-top: -40vh">puis j'ai flotté jusqu'au ciel <br> pour me retrouver enfin <br> parmi les nuages.</p>
             </div>
 
-            
+            <ul class="technique-gsap"> 
+                <li>timeline de 7 étapes</li> 
+                <li>anim: x, y et opacity</li> 
+                <li>repeat à l'infini</li> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#chapter6</li> 
+                        <li>pin=true</li> 
+                        <li>toggleActions=restart complete reverse reset</li> 
+                    </ul> 
+                </li> 
+                <li>sprite sheet s'anime lorsque body contient la classe .is-scrolling</li> 
+            </ul> 
         </section>
     </main>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <!--<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
-    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
-    <script src="script/script.js"></script> 
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>-->
+    <script src="script/script.min.js"></script> 
 </body>
 </html>
