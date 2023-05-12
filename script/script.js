@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
+/*gsap.registerPlugin(MotionPathPlugin);*/
+/*gsap.registerPlugin(MorphSVGPlugin);*/
 
 let body = document.querySelector('body');
 let timerScroll;
@@ -30,7 +30,7 @@ gsap.to("#nuage",{
     scrub: 0.5,
     trigger: "header"
   },
-  morphSVG: "#fantome"
+  /*morphSVG: "#fantome"*/
 });
 
 /* ---- Animation chapitre 1 ---- */
@@ -64,10 +64,10 @@ gsap.timeline({
   .from(".p-chapter2-1.no1", {x: "-100%", duration: 3, ease: "power2.inOut"}, "+=0.25")
   .from(".p-chapter2-1.no2", {x: "100%", duration: 3, ease: "power2.inOut"}, "<")
   .from(".ixy-foret", {x: "-100%", duration: 8}, "-=2")
-  .from(".vent", {ease: "none", drawSVG: "0% 0%"}, "+=1")
+  .from(".vent", {ease: "none", /*drawSVG: "0% 0%"}*/, "+=1")
   .to(".p-chapter2-1.no1", {opacity: 0}, "<")
   .to(".p-chapter2-1.no2", {opacity: 0}, "<")
-  .to(".visual.chapter2.no2", {motionPath: {align: ".vent", path: ".vent", start: 0, end: 1}}, "<")
+  .to(".visual.chapter2.no2", {/*motionPath: {align: ".vent", path: ".vent", start: 0, end: 1}*/}, "<")
 
   .to(".ixy-foret", {opacity: 0}, "+=0.1")
   .to(".vent", {opacity: 0}, "<")
